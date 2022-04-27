@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="stateData"
+            type="com.jolaifa.mad_ind05_olaifa_julius.StateData" />
+
+        <variable
+            name="clickListener"
+            type="com.jolaifa.mad_ind05_olaifa_julius.StateListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:onClick="@{() -> clickListener.onClick(stateData)}">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="OK - Oklahoma"
+                android:text="@{stateData.name}"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="The Sooner State"
+                android:text="@{stateData.nickname}"
+                android:textSize="13sp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</layout>

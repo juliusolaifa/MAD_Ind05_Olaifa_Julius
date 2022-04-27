@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ak_map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="AK - Alaska"
+            android:text="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/map"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ak_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/name" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="273,238 Miles"
+            android:text="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/flag"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+</layout>
